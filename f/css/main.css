@@ -1989,8 +1989,7 @@ a:hover.text-primary {
   position: relative;
   text-align: center;
   width: 260px;
-  margin: 0 auto;
-  max-width: 100%; }
+  margin: 0 auto; }
   @media (min-width: 576px) {
     .needle {
       width: 350px; } }
@@ -2075,10 +2074,15 @@ a:hover.text-primary {
     overflow: hidden;
     width: 195px;
     height: 195px;
+    max-width: 100%;
     margin-bottom: 30px;
     border-radius: 50%;
     display: inline-block;
     vertical-align: top; }
+    @media (min-width: 992px) {
+      .material-slider__img {
+        width: 175px;
+        height: 175px; } }
   .material-slider__text {
     text-transform: uppercase; }
     .material-slider__text span {
@@ -2090,6 +2094,9 @@ a:hover.text-primary {
     top: 80px;
     background: transparent;
     border: none; }
+    @media (min-width: 992px) {
+      .material-slider__nav button {
+        top: 70px; } }
     .material-slider__nav button.prev {
       left: -70px; }
       .material-slider__nav button.prev .icon-arrow2 {
